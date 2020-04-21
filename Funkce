@@ -1,0 +1,24 @@
+#include<stdio.h>	//knihovna kterou budu používat
+
+void funkce(int a, int b) //tento řádek uvádí funkci říká její název a její proměné do kterých se dá dosadit
+{
+	
+	if (a > b)	//podmínka která porovná dvě čísla
+		printf("%i", b);	//jedna možnost výpisu menšího čísla když a je větší než b
+	if (b > a)	//druhá podmínka porovnávání
+		printf("%i", a);	//druhá možnost výpisu menšího čísla když b je větší než a
+	
+}
+
+void main()	//pod toto se vytváří "tělo programu"
+{
+	int cislo1;	//vytvoření jedné proměné
+	int cislo2;	//vytvoření druhé proměné
+	printf("napiste dve cisla ktera chcete porovnat");	//výpis pro uživatel co má udělat
+	scanf_s("%i", &cislo1);	//přijmutí první proměné
+	scanf_s("%i", &cislo2);	//přijmutí druhé proměné
+
+	funkce(cislo1,cislo2);	//přivolání funkce
+	
+
+}
