@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void main()
+{	
+		int vstup;//zapíšu hodnotu do které budu zapisovat vstupní hodnotu 
+		int znovu = 5;//zapíšu proměnnou pomocí které budu opakovat cyklus dokud se nedostanu na konec
+		while (znovu == 5)//udělám podmínku pomocí které budu opakovat do nekonečna
+		{
+			printf("zadejte cislo ze ktereho chcete faktoriál: ");//zde zapíšu číslo, které chci
+			scanf_s("%d", &vstup);//vypíše danné číslo
+			int i; //vytvořím hodnotu i která mi bude pomáhat se vstupem
+			for (int i = vstup - 1; i > 0; i--);//udělám další podmínku proto aby se vypočítal faktorial
+			{
+				vstup = vstup * i;//vypočítá se faktorial
+			}
+			printf("faktorial cisla je %d", vstup);//vypíše faktoria, který se vypočítal z faktorial = faktorial * i
+			
+		}
