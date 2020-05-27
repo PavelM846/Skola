@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+
+struct zlomek
+{
+	int citatel;
+	int jmenovatel;
+};
+
+zlomek vytvor_zlomek(int a, int b)
+{
+	zlomek cislo;
+	cislo.citatel = a;
+	cislo.jmenovatel = b;
+	return cislo;
+};
+
+void vypis_zlomek(zlomek cislo2)
+{
+	printf("Zlomek je: %d/%d", cislo2.citatel, cislo2.jmenovatel);
+
+};
+
+void main()
+{
+	printf("Napiste citatel i jmenovatel: ");
+	int cislo1;
+	scanf_s("%i", &cislo1);
+	int cislo2;
+	scanf_s("%i", &cislo2);
+	zlomek cislo = vytvor_zlomek(cislo1, cislo2);
+	vypis_zlomek(cislo);
+
+
+
+
+
+}
